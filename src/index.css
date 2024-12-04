@@ -1,0 +1,55 @@
+/* Estilos globales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+nav {
+  background-color: #000; /* Color de fondo negro para el nav */
+  padding: 1rem;
+  display: flex; /* Utilizamos flexbox para centrar */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Asegura que los elementos estén centrados dentro del ul */
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff; /* Letras blancas en el nav */
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media (max-width: 1024px) {
+  nav ul {
+    flex-direction: row; /* Asegura que los elementos estén en fila */
+    justify-content: center; /* Centra los elementos de la barra de navegación */
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+    align-items: center; /* Centra los elementos en la columna */
+  }
+  nav ul li {
+    margin-bottom: 0.5rem; /* Añade espacio entre los elementos */
+  }
+}

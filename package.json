@@ -1,0 +1,26 @@
+{
+  "name": "react-redux-cart",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.1"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.4.0",
+    "axios": "^1.7.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-redux": "^9.1.2",
+    "react-router-dom": "^7.0.1",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
+  }
+}

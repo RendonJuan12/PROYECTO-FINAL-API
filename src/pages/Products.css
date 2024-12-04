@@ -1,0 +1,120 @@
+/* src/pages/Products.css */
+
+.product-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espacio entre los elementos */
+  background-color: #f4f4f4; /* Fondo claro para la sección */
+  padding: 2rem; /* Añadir espacio alrededor de la lista de productos */
+}
+
+.product-card {
+  border: 1px solid #d4af37; /* Borde dorado en cada tarjeta */
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  width: 30%; /* Por defecto, cada tarjeta ocupa el 30% del ancho */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+  background-color: #fff; /* Fondo blanco para las tarjetas */
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  background-color: #fff8e1; /* Color suave dorado al pasar el mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar un toque elegante */
+}
+
+.product-image {
+  width: 100%; /* Ajusta la imagen al ancho de la tarjeta */
+  height: 200px; /* Fija una altura consistente para todas las imágenes */
+  object-fit: cover; /* Recorta la imagen para llenar el contenedor */
+  border-radius: 4px; /* Opcional: redondea las esquinas de la imagen */
+}
+
+button {
+  background-color: #d4af37; /* Fondo dorado para el botón */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #b38b27; /* Cambio de tono dorado en hover */
+}
+
+/* Estilos para centrar la sección de creación de un nuevo producto */
+.product-management {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos horizontalmente */
+  background-color: #fff8e1; /* Fondo suave para la sección */
+  padding: 2rem;
+  border: 1px solid #d4af37; /* Borde dorado */
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.product-management input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #d4af37;
+  border-radius: 4px;
+  width: 100%; /* Asegura que los inputs ocupen todo el ancho del contenedor */
+  max-width: 400px; /* Limita el ancho máximo */
+  box-sizing: border-box;
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media (max-width: 1024px) {
+  .product-card {
+    width: 45%; /* En tablets, cada tarjeta ocupa el 45% */
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 100%; /* En pantallas pequeñas, cada tarjeta ocupa el 100% */
+  }
+  .product-list {
+    justify-content: center; /* Centra las tarjetas en pantallas pequeñas */
+  }
+}
+
+/* Contenedor de controles de cantidad */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Espacio entre los elementos */
+  margin-top: 0.5rem; /* Separación con el precio */
+}
+
+/* Botones de cantidad */
+.quantity-button {
+  background-color: #d4af37; /* Fondo dorado */
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 30px; /* Tamaño fijo para los botones */
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-button:hover {
+  background-color: #b38b27; /* Cambio de tono dorado en hover */
+}
+
+/* Estilo para mostrar la cantidad */
+.quantity-controls span {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}

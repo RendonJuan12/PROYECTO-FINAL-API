@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Anillo de Oro 18k",
+      "price": 500,
+      "image": "/images/anillo.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Cadena de Oro 18k",
+      "price": 700,
+      "image": "/images/cadena.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Manilla de Oro 18k",
+      "price": 400,
+      "image": "/images/manilla.jpg"
+    },
+    {
+      "id": "5",
+      "title": "SENA Cocina",
+      "price": 8935364747744,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGOdt4TRGLZ5Em-VU4PyKdo1dEKyMfmDbOlrZztNMDak4QxIDG7fLB5fK0_Oy2RmtXqgY&usqp=CAU"
+    }
+  ]
+}
